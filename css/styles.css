@@ -139,3 +139,12 @@ main {
     background-color: #ddd;
 }
 
+.main-footer {
+    color: white;
+    background-color: #222222;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
