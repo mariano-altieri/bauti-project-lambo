@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html">
+            <img src="../img/logo.png" alt="logo" class="logo">
+        </a>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="../pages/modelos.html">MODELOS</a></li>
+                <li><a href="../pages/galeria.html">GALERIA</a></li>
+                <li><a href="../pages/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>CONTACTO</h1>
+        <form action="form.php" method="post" class="form">
+            <label for="nombre">Nombre y apellido:</label>
+            <input type="text" name="nombre" id="nombre" required>
+                <br>
+                <br>
+            <label for="problema">Tipo de problema:</label>
+            <select id="problema" name="problema" required>
+                <option value="" disabled selected>
+                    Seleccione el tipo de problema
+                </option>
+                <option value="Problema con el sitio web">
+                    Problema con el sitio web
+                </option>
+                <option value="Consulta sobre modelos">
+                    Consulta sobre modelos
+                </option>
+                <option value="Asistencia técnica">
+                    Asistencia técnica
+                </option>
+                <option value="Otro">
+                    Otro
+                </option>
+            </select>
+                <br>
+                <br>
+            <textarea id="descripcion" name="descripcion" cols="30" rows="10"   required placeholder="Describe tu problema..."></textarea>
+                <br>
+                <br>
+            <label for="">email:</label>
+            <input type="email" name="email" id="email" required>
+                <br>
+                <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
